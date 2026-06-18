@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile-httpd
 
-    container-name: apache-container
+    container_name: apache-container
 
     ports:
       - "8081:80"
@@ -21,7 +21,7 @@ services:
       context: .
       dockerfile: Dockerfile-tomcat
 
-    container-name: tomcat-container
+    container_name: tomcat-container
 
     ports:
       - "8082:8080"
