@@ -30,10 +30,10 @@ services:
       - app-network
 
     
-  networks:
+networks:
 
-    web-network:
-      driver: bridge
+  web-network:
+    driver: bridge
 
-    app-network:
-      driver: bridge 
+  app-network:
+    driver: bridge 
