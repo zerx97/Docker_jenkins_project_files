@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
 
-  apache: 
+  apache:
     build:
       context: .
       dockerfile: Dockerfile-httpd
@@ -12,9 +12,8 @@ services:
     ports:
       - "8081:80"
 
-    networks: 
-     - web-network
-
+    networks:
+      - web-network
 
   tomcat:
     build:
@@ -26,14 +25,13 @@ services:
     ports:
       - "8082:8080"
 
-    network:
+    networks:
       - app-network
 
-    
 networks:
 
   web-network:
     driver: bridge
 
   app-network:
-    driver: bridge 
+    driver: bridge
